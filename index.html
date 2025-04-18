@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Kumar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/harish_logo.png" alt="Harish Kumar Logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times close-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars open-menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="tagline">Data Analyst | Software Developer | DSA Enthusiast</p>
+            <div class="name-title">
+                <h1>Hi, I'm <span class="name-gradient">Harish Kumar</span></h1>
+                <div class="animated-underline"></div>
+            </div>
+            <p class="mission-statement">
+                <span class="quote-mark">“</span>Transforming data into actionable insights, one solution at a time.<span class="quote-mark">”</span>
+            </p>
+            <a href="#contact" class="cta-button">Let's Connect <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/portrait.png" alt="Harish Kumar">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring Data Analyst with expertise in Python, Power BI, SQL, and problem-solving.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages:</span> Python, C, Java, Advanced Java</li>
+                        <li><span>Tools:</span> Power BI, SQL, Excel</li>
+                        <li><span>Data Skills:</span> Visualization, statistical analysis, data cleaning</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li>🏆 2nd Prize in AI Paper Presentation - Anna University, 2024</li>
+                        <li>🏆 Data Science Presentation - SREC, 2023</li>
+                        <li>🎓 AI Workshop - IIT Madras, 2024</li>
+                        <li>🏅 Participated in IIT Hyderabad Hackathon - Maze Runner</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>🎓 B.Tech in AI & Data Science (2022-2026) - MCET</li>
+                        <li>🏫 HSC (89%) - Counian Matriculation School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section (Updated) -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <!-- Maze Runner -->
+            <div class="work">
+                <img src="Images/Maze_runner1.jpg" loading="lazy" alt="Maze Runner">
+                <div class="layer">
+                    <h3>Maze Runner</h3>
+                    <p>Autonomous maze-solving robot</p>
+                    <a href="projects/maze-runner.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Unauthorized Face Detection -->
+            <div class="work">
+                <img src="Images/Unauthorized_image.jpg" loading="lazy" alt="Unauthorized Face Detection">
+                <div class="layer">
+                    <h3>Unauthorized Face Detection</h3>
+                    <p>Security facial recognition system</p>
+                    <a href="projects/face-detection.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Insights in Hospitality -->
+            <div class="work">
+                <img src="Images/Insights_Hospitality.png" loading="lazy" alt="Insights in Hospitality">
+                <div class="layer">
+                    <h3>Insights in Hospitality</h3>
+                    <p>Data analytics using Power BI</p>
+                    <a href="projects/hospitality-analytics.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- YOLO Model -->
+            <div class="work">
+                <img src="Images/yolo_models_55d9193f54.webp" loading="lazy" alt="YOLO Model">
+                <div class="layer">
+                    <h3>YOLO Object Detection</h3>
+                    <p>Real-time object detection system</p>
+                    <a href="projects/yolo-model.html" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Multi-Platform Scraper -->
+            <div class="work">
+                <img src="Images/Multiplatform_Scrapper.png" loading="lazy" alt="Multi-Platform Scraper">
+                <div class="layer">
+                    <h3>Multi-Platform Scraper</h3>
+                    <p>Drug trafficking detection system</p>
+                    <a href="projects/multiplatform-scraper.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> harishkumar727622@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9876543210</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="Harish Kumar A.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="copyright">
+    <p>© 2025 Harish Kumar. Built with ❤️ by Harish Kumar.</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function opentab(tabname){
+        document.querySelectorAll('.tab-links').forEach(tab => tab.classList.remove("active-link"));
+        document.querySelectorAll('.tab-contents').forEach(tab => tab.classList.remove("active-tab"));
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+    // Highlight active nav link while scrolling
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.scrollY >= sectionTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+    
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80, // Adjust for fixed header
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
