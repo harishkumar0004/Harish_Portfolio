@@ -1,5 +1,7 @@
 # 🚀 Harish Kumar | Data Analyst & Developer Portfolio
 
+🚀 [Live Demo](https://harishkumar0004.github.io/Harish_Portfolio/)
+
 ![Portfolio Banner](Images/banner.png)
 [![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Active-success)](https://yourusername.github.io)
 [![Progress](https://img.shields.io/badge/🚧_Progress-85%25-orange)]()
